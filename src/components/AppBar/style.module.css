@@ -113,6 +113,23 @@
     padding-right: 0;
   }
 }
+@media screen and (max-width:361px) {
+  .barContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .span{
+    font-size: 15px;
+  }
+
+  .list{
+    padding-inline-start: 0;
+    padding-right: 0;
+  }
+}
 .menu{
   display:none;
 }

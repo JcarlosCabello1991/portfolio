@@ -28,6 +28,7 @@ function Hero() {
             <span className={styles.boxesSpan}>Persevering</span>
           </div>
         </div>
+        <a href='https://github.com/JcarlosCabello1991' style={{marginBottom:'1rem'}}><span className={styles.title}>Click to My GitHub</span></a>
         <button className={styles.btnContact}><a href='#Contact' className={styles.a}><span>Contact Me</span></a></button>
       </div>
       <div className={styles.imageContainer}>

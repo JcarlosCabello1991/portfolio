@@ -31,7 +31,7 @@ function Appbar() {
     <div id='HomePage' className={styles.barContainer}>
       
       {
-        window.innerWidth <= 280 &&
+        window.innerWidth <= 345 &&
         <div className={styles.menu}>
         <div className={styles.menuIcon} onClick={toggleVerticalMenu}>
           <i className="fa-solid fa-bars"></i>
@@ -48,7 +48,7 @@ function Appbar() {
       </div>
       }
       {
-         window.innerWidth > 280 && 
+         window.innerWidth > 345 && 
         <ul className={styles.list}>
         <li><a href='#HomePage' className={styles.a}><span id='Home' className={`${styles.span} ${styles.active}`} onClick={()=>{toggleMenu('Home', active)}}>Home</span></a></li>
         <li><a href='#HighlightProjects' className={styles.a}><span id='Projects' className={styles.span} onClick={()=>{toggleMenu('Projects', active)}}>Projects</span></a></li>

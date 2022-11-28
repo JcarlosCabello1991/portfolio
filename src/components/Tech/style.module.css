@@ -1,0 +1,14 @@
+.techContainer{
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.grigContainerTechnologies{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  padding: 2rem 0 2rem 0;
+}
+
+.imageTech{
+  width: 5rem;
+}

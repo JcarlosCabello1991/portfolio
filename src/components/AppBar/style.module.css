@@ -1,0 +1,140 @@
+.barContainer{
+  display: flex;
+  background-color: #F1F6FE;
+  height: 2rem;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  position:fixed;
+  width: 80%;
+  top: 0;
+  justify-content: end;
+  z-index: 1;
+}
+
+.list{
+  display: flex;
+  gap: 1rem;
+  padding-right: 1rem;
+  list-style: none;
+}
+
+.a{
+  text-decoration: none;
+  color: black;
+}
+
+.span{
+  color: black;
+}
+
+.active{
+  background-color: rgb(0, 136, 255);
+  border-radius: 15px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 1.5rem;
+  color: white;
+}
+
+.menuIcon{
+  display: none;
+}
+
+.hide{
+  display: none;
+}
+
+@keyframes menuAnimation {
+  0%{
+    position: absolute;
+    margin-top: 2rem;
+    width:0%;
+    height: fit-content;
+    background-color: white;
+  }
+  100%{
+    position: absolute;
+    margin-top: 2rem;
+    width:50%;
+    height: fit-content;
+    background-color: white;
+  }
+}
+.menuContainer{
+  position: absolute;
+  margin-top: 2rem;
+  width:50%;
+  height: fit-content;
+  background-color: white;
+  animation-name: menuAnimation;
+  animation-duration: 0.3s;
+}
+
+.listVertical{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-right: 1rem;
+  list-style: none;
+}
+
+@media screen and (max-width:1080px) {
+  .barContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .span{
+    font-size: 14px;
+  }
+
+  .list{
+    padding-inline-start: 0;
+  }
+}
+
+@media screen and (max-width:419px) {
+  .barContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .span{
+    font-size: 14px;
+  }
+
+  .list{
+    padding-inline-start: 0;
+    padding-right: 0;
+  }
+}
+.menu{
+  display:none;
+}
+
+@media screen and (max-width:345px) {
+  .menu{
+    display: flex;
+    flex-direction: column;
+  }
+  .menuIcon{
+    display: flex;
+    margin-left: 1rem;
+  }
+
+  .barContainer{
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .list{
+    display: none;
+  }
+}
+
+/* 335px icono apertura menu */

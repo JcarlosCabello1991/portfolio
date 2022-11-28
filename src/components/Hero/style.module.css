@@ -1,0 +1,201 @@
+.heroContainer{
+  display: flex;
+  background-color: #F1F6FE;
+  /* height: 20rem; */
+  justify-content: space-around;
+  /* align-items: center; */
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.h1Name{
+  font-size: 150%; 
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+}
+
+.title{
+  color: rgb(0, 136, 255);
+  font-weight: bold;
+}
+
+.legend{
+  color: rgb(101, 101, 101);
+}
+
+.btnContact{
+  background-color: rgb(0, 136, 255);
+  border-radius: 15px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 1.5rem;
+  color: white;
+  border: 0px;
+}
+
+.image{
+  margin-top: 0;
+  width: 19rem;
+}
+
+@media screen and (max-width:599px) {
+  .description{
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .image{
+    position: absolute;
+    left: 69%;
+    width: 26%;
+  }
+}
+
+@media screen and (max-width:419px) {
+  .heroContainer{
+    height: fit-content;
+  }
+
+  .description{
+    margin-top: 7rem;
+  }
+
+  .image{
+    position: absolute;
+    left: 35%;
+    width: 30%;
+  }
+}
+
+.gridSkillsContainer{
+  width: 100%;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  margin-bottom:2rem;
+  gap:1rem;
+}
+
+.boxGithub{
+  box-sizing: border-box;
+  width: 7rem;
+  font-size: 1.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  height: 2rem;
+  left: 77.5%;
+  top: 6rem;
+
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+  box-shadow: 0px 4px 16px rgba(0, 14, 34, 0.1), inset 0px 4px 10px rgba(255, 255, 255, 0.1), inset 0px 5px 10px rgba(26, 108, 232, 0.1);
+  backdrop-filter: blur(10px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 10px;
+}
+
+.boxScrum{
+  box-sizing: border-box;
+  width: 7rem;
+  font-size: 1.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  height: 2rem;
+  left: 77.5%;
+  top: 18rem;
+
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+  box-shadow: 0px 4px 16px rgba(0, 14, 34, 0.1), inset 0px 4px 10px rgba(255, 255, 255, 0.1), inset 0px 5px 10px rgba(26, 108, 232, 0.1);
+  backdrop-filter: blur(10px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 10px;
+}
+
+
+
+.boxEmpathetic{
+  box-sizing: border-box;
+
+  font-size: 1.2rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  height: 2rem;
+  left: 78%;
+  top: 14rem;
+
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+  box-shadow: 0px 4px 16px rgba(0, 14, 34, 0.1), inset 0px 4px 10px rgba(255, 255, 255, 0.1), inset 0px 5px 10px rgba(26, 108, 232, 0.1);
+  backdrop-filter: blur(10px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 10px;
+}
+
+.boxPersevering{
+  box-sizing: border-box;
+
+  font-size: 1.2rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  height: 2rem;
+  top: 10rem;
+
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+  box-shadow: 0px 4px 16px rgba(0, 14, 34, 0.1), inset 0px 4px 10px rgba(255, 255, 255, 0.1), inset 0px 5px 10px rgba(26, 108, 232, 0.1);
+  backdrop-filter: blur(10px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 10px;
+}
+
+.boxesSpan{
+  font-size:80%;
+}
+
+@media screen and (max-width:1080px) {
+  .boxScrum{
+    left: 84%;
+  }
+  .boxEmpathetic{
+    left: 85%;
+  }
+  .boxGithub{
+    left: 84%;
+  }
+  .boxPersevering{
+    left: 85%;
+  }
+}
+
+.imageContainer{
+  height: 100%;
+}
